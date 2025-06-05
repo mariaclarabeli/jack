@@ -3,6 +3,9 @@
 
 :root {
     --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
 }
 
 body {
@@ -14,6 +17,31 @@ header {
     background-color: #ffffff;
 }
 
+.menu-acessibilidade {
+    position:fixed;
+    right: 20px;
+    top: 2rem;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+}
+
+.apresenta-lista {
+    display: none;
+}
 
 section {
     padding-bottom: 5rem;
@@ -41,9 +69,9 @@ section {
 /* posicionamento para a imagem à direita */
 .img-inicio {
     position: absolute;
-    right: 0;
+    right: 7%;
     top: 18rem;
-    width: 45rem;
+    width: 40rem;
     height: auto;
 }
 
@@ -137,35 +165,6 @@ h2 {
 }
 
 /* chama classe do bootstrap para modificar a cor */
-.form-control {
-    background-color: #F1EDEF;
-}
-
-.menu-acessibilidade {
-    position: fixed;
-    top: 2rem;
-    right: 20px;
-    z-index: 1000;
-}
-
-.rotacao-botao {
-    transform: rotate(-90deg);
-    trasform-origin: right center;
-}
-
-.opcoes-acessibilidade button {
-    margin-bottom: 5px;
-}
-
-.opcoes-acessibilidade {
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-}
-
-.apresenta-lista {
-    display: none;
-}
 .form-control {
     background-color: #F1EDEF;
 }
